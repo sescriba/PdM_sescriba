@@ -43,31 +43,54 @@ static void Error_Handler(void);
 
 /* Private functions ---------------------------------------------------------*/
 
+/**
+  * @brief  Time initialization
+  * @param  delay_t * delay, tick_t duration
+  * @retval Void
+  */
 void delayInit(delay_t * delay, tick_t duration ){
+	if(duration <= 0) return;
 	delay->startTime = 0;
 	delay->duration = duration;
 	delay->running = false;
 	return;
 }
 
+/**
+  * @brief  Time control
+  * @param  delay_t * delay
+  * @retval bool_t end
+  */
 bool_t delayRead(delay_t * delay ){
 	uint32_t time = 0;
-	if(delay->running == false){
+	bool_t end = false;
+	if(delay->running == false){	//Initialization check
 		delay->startTime = HAL_GetTick();
 		delay->running = true;
 	}
 	else{
-		time = HAL_GetTick() - (delay->startTime);
-		if(time >= delay->duration){
+		time = HAL_GetTick() - (delay->startTime);		//Get difference
+		if(time >= delay->duration){		//Time control
 			delay->running = false;
-			return true;
+			end = true;
+			return end;
 		}
-		else return false;
+		else{
+			end = false;
+			return end;
+		}
 	}
-	return false;
+	end = false;
+	return end;
 }
 
+/**
+  * @brief  Time reassignation
+  * @param  delay_t * delay
+  * @retval bool_t end
+  */
 void delayWrite(delay_t * delay, tick_t duration ){
+	if(duration <= 0) return;
 	delay->duration = duration;
 	return;
 }
