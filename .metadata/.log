@@ -3161,3 +3161,36 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\Documents\CES
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-04 19:58:20.617
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-09-06 19:52:42.172 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-06 19:53:03.231
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-06 19:53:03.398
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Programacion_Microcontroladores\PdM_sescriba\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-06 19:53:21.547
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-06 20:32:40.967
+!MESSAGE Indexed 'Practica_3' (99 sources, 209 headers) in 11,1 sec: 29.576 declarations; 93.755 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,12 %)
+!SESSION 2022-09-09 20:32:26.546 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-09 20:32:40.458
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-09 20:32:40.608
+!MESSAGE Log4j initialized with config file D:\Documents\CESE\Programacion_Microcontroladores\PdM_sescriba\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-09 20:33:01.841
+!MESSAGE Started RMI Server, listening on port 41337
