@@ -63,6 +63,7 @@ void debounceFSM_update(){
 					buttonPressed();
 				}
 			}
+			else state = BUTTON_UP;
 			break;
 		case BUTTON_DOWN:
 			if(!BSP_PB_GetState(BUTTON_USER)){
@@ -78,6 +79,7 @@ void debounceFSM_update(){
 					buttonReleased();
 				}
 			}
+			else state = BUTTON_DOWN;
 			break;
 		default:
 			debounceFSM_init();
