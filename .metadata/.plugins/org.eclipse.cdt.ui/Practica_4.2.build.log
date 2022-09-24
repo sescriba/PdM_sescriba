@@ -1,18 +1,10 @@
-20:13:02 **** Incremental Build of configuration Debug for project Practica_4.2 ****
+12:45:10 **** Build of configuration Debug for project Practica_4.2 ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F429ZITx -DSTM32F4 -DNUCLEO_F429ZI -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Inc -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/CMSIS/Include" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/BSP/STM32F4xx_Nucleo_144" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/Core/Inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/API" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/API/inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/API/src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Drivers/API/src/API_debounce.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F429ZITx -DSTM32F4 -DNUCLEO_F429ZI -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Inc -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/CMSIS/Include" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/BSP/STM32F4xx_Nucleo_144" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/Core/Inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/API" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/API/inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_4.2/Drivers/API/src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/API/src/API_debounce.d" -MT"Drivers/API/src/API_debounce.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/API/src/API_debounce.o"
-arm-none-eabi-gcc -o "Practica_4.2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Programacion_Microcontroladores\PdM_sescriba\Practica_4.2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Practica_4.2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Practica_4.2.elf
- 
 arm-none-eabi-size   Practica_4.2.elf 
-arm-none-eabi-objdump -h -S  Practica_4.2.elf  > "Practica_4.2.list"
    text	   data	    bss	    dec	    hex	filename
    7132	     36	   1596	   8764	   223c	Practica_4.2.elf
 Finished building: default.size.stdout
  
-Finished building: Practica_4.2.list
- 
 
-20:13:06 Build Finished. 0 errors, 0 warnings. (took 3s.469ms)
+12:45:11 Build Finished. 0 errors, 0 warnings. (took 881ms)
 
