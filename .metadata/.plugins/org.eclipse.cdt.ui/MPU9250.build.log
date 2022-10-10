@@ -1,17 +1,10 @@
-20:39:45 **** Incremental Build of configuration Debug for project MPU9250 ****
+20:51:29 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
-arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Programacion_Microcontroladores\PdM_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MPU9250.elf
- 
 arm-none-eabi-size   MPU9250.elf 
-arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
   23072	    108	   1772	  24952	   6178	MPU9250.elf
 Finished building: default.size.stdout
  
-Finished building: MPU9250.list
- 
 
-20:39:46 Build Finished. 0 errors, 0 warnings. (took 949ms)
+20:51:30 Build Finished. 0 errors, 0 warnings. (took 315ms)
 

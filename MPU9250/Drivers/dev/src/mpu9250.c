@@ -47,7 +47,7 @@ static retType gyro_convert(uint16_t axis, float * paxis);
 static retType accl_convert(uint16_t axis, float * paxis);
 static retType temp_convert(uint16_t temp, float * ptemp);
 
-MPU9250Register_t MPU9250_InitValues[MPU9250_INIT_REGISTERS]= {
+static MPU9250Register_t MPU9250_InitValues[MPU9250_INIT_REGISTERS]= {
 		{.addr = MPU9250_PWR_MGMT_1, .value = 0x0, .size = 1},
 		{.addr = MPU9250_PWR_MGMT_1, .value = 0x1, .size = 1},
 		{.addr = MPU9250_GYRO_CONFIG, .value = 0x18, .size = 1},
@@ -55,12 +55,12 @@ MPU9250Register_t MPU9250_InitValues[MPU9250_INIT_REGISTERS]= {
 		{.addr = MPU9250_ACCEL_CONFIG_1, .value = 0x18, .size = 1},
 		{.addr = MPU9250_ACCEL_CONFIG_2, .value = 0x7, .size = 1},
 };
-MPU9250Register_t MPU9250_GyroValues[MPU9250_GYRO_ACCL_REGISTERS]= {
+static MPU9250Register_t MPU9250_GyroValues[MPU9250_GYRO_ACCL_REGISTERS]= {
 		{.addr = MPU9250_GYRO_XOUT_H, .value = 0x0, .size = 2},
 		{.addr = MPU9250_GYRO_YOUT_H, .value = 0x0, .size = 2},
 		{.addr = MPU9250_GYRO_ZOUT_H, .value = 0x0, .size = 2},
 };
-MPU9250Register_t MPU9250_AcclValues[MPU9250_GYRO_ACCL_REGISTERS]= {
+static MPU9250Register_t MPU9250_AcclValues[MPU9250_GYRO_ACCL_REGISTERS]= {
 		{.addr = MPU9250_ACCEL_XOUT_H, .value = 0x0, .size = 2},
 		{.addr = MPU9250_ACCEL_YOUT_H, .value = 0x0, .size = 2},
 		{.addr = MPU9250_ACCEL_ZOUT_H, .value = 0x0, .size = 2},

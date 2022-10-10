@@ -13,10 +13,10 @@
 #define READ_TIME 1000
 
 /* Private variables ---------------------------------------------------------*/
-State_t states;
-State_t new_state;
-MPU9250_t read_buff;
-ttimer_t idle;
+static State_t states;
+static State_t new_state;
+static MPU9250_t read_buff;
+static ttimer_t idle;
 
 /* Private function prototypes -----------------------------------------------*/
 static retType print_string(MPU9250_t * data);
