@@ -1,21 +1,35 @@
-13:23:43 **** Incremental Build of configuration Debug for project Practica_5.0 ****
+20:38:49 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
-arm-none-eabi-gcc "../Drivers/API/src/API_UART.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F429ZITx -DSTM32F4 -DNUCLEO_F429ZI -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Inc -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_5.0/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_5.0/Drivers/CMSIS/Include" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_5.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_5.0/Drivers/BSP/STM32F4xx_Nucleo_144" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_5.0/Drivers/Core/Inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_5.0/Drivers/API" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_5.0/Drivers/API/inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/Practica_5.0/Drivers/API/src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/API/src/API_UART.d" -MT"Drivers/API/src/API_UART.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/API/src/API_UART.o"
-arm-none-eabi-gcc -o "Practica_5.0.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Programacion_Microcontroladores\PdM_sescriba\Practica_5.0\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Practica_5.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Practica_5.0.elf
+arm-none-eabi-gcc "../Drivers/dev/src/mpu9250.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/dev/src/mpu9250.d" -MT"Drivers/dev/src/mpu9250.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/dev/src/mpu9250.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Programacion_Microcontroladores\PdM_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
  
-arm-none-eabi-size   Practica_5.0.elf 
-arm-none-eabi-objdump -h -S  Practica_5.0.elf  > "Practica_5.0.list"
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
    text	   data	    bss	    dec	    hex	filename
-   9688	     36	   1668	  11392	   2c80	Practica_5.0.elf
+  23088	    108	   1772	  24968	   6188	MPU9250.elf
 Finished building: default.size.stdout
  
-Finished building: Practica_5.0.list
+Finished building: MPU9250.list
  
-13:23:51 **** Incremental Build of configuration Debug for project Practica_5.0 ****
+20:38:53 **** Incremental Build of configuration Debug for project MPU9250 ****
 make -j8 all 
-arm-none-eabi-size   Practica_5.0.elf 
+arm-none-eabi-size   MPU9250.elf 
    text	   data	    bss	    dec	    hex	filename
-   9688	     36	   1668	  11392	   2c80	Practica_5.0.elf
+  23088	    108	   1772	  24968	   6188	MPU9250.elf
 Finished building: default.size.stdout
+ 
+20:39:45 **** Incremental Build of configuration Debug for project MPU9250 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/app/app_sm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/src" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/dev/inc" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Src" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Inc/app" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Core/Src/app" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/BSP" -I"D:/Documents/CESE/Programacion_Microcontroladores/PdM_sescriba/MPU9250/Drivers/BSP/STM32F4xx_Nucleo_144" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/app/app_sm.d" -MT"Core/Src/app/app_sm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app_sm.o"
+arm-none-eabi-gcc -o "MPU9250.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Documents\CESE\Programacion_Microcontroladores\PdM_sescriba\MPU9250\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU9250.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU9250.elf
+ 
+arm-none-eabi-size   MPU9250.elf 
+arm-none-eabi-objdump -h -S  MPU9250.elf  > "MPU9250.list"
+   text	   data	    bss	    dec	    hex	filename
+  23072	    108	   1772	  24952	   6178	MPU9250.elf
+Finished building: default.size.stdout
+ 
+Finished building: MPU9250.list
  
