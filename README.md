@@ -155,4 +155,37 @@ Implementar un programa que cambie la frecuencia de toggleo del LED2 entre 100 m
 Para pensar luego de resolver el ejercicio:
 ¿Es adecuado el control de los parámetros pasados por el usuario que se hace en las funciones implementadas? ¿Se controla que sean valores válidos? ¿Se controla que estén dentro de los rangos correctos?
 ¿Se nota una mejora en la detección de las pulsaciones respecto a la práctica 0?
+------------------------------------------------------------------------
+Proyecto final: MEF y driver para módulo inercial MPU9250
+
+Definición del trabajo: 
+- Programa capaz de leer y escribir los registros de un módulo MPU9250 (Unidad de Medición Inercial) 
+- Uso de comunicación I2C. 
+- Tomar los valores de salida de un giroscopio, un acelerómetro y un sensor de temperatura para un instante dado. 
+- Entregados al usuario mediante comunicación UART e impresos en pantalla. 
+- Uso de una MEF (Máquina de Estados Finitos), 
+    - Encargada de leer los registros cada 1 segundo
+    - Imprimirlos por pantalla 
+    - Realizar otras actividades sin afectar el flujo del programa (Sin bloqueo).
+    
+Periféricos utilizados:
+- UART
+- I2C
+- Timer
+
+Modularización: 
+- Core
+	- src (.c)
+		- APP → SM
+		- MAIN
+	- inc (.h)
+		- APP → SM
+		- MAIN
+- Driver
+	- DEV
+		- src (.c)→ Timer, UART, MPU9250, Port (I2C)
+		- inc (.h)→ Timer, UART, MPU9250, Port (I2C)
+MEF:
+![Screenshot 2022-10-11 192627](https://user-images.githubusercontent.com/55771346/195209780-94d37d66-3aa2-4440-b6a5-72177b0659dd.png)
+
 
